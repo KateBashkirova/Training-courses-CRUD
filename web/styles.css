@@ -1,0 +1,54 @@
+h1{
+    color: #E8C397;
+    font-size: 35px;
+}
+
+#columnHeading{
+    font-size: 22px;
+    color: #E8C397;
+}
+
+#coursesInfo{
+    background-color: #343436;
+}
+body{
+    background-image: url(pics/background3.jpg);
+}
+
+.newButtons{
+    position: absolute;
+    width: 220px;
+    height: 50px;
+
+    background:rgba(0, 0, 0, 0);
+    border: 1px solid #E8C397;
+    box-sizing: border-box;
+    cursor:pointer;
+    color: #E8C397;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.newButtons:hover{
+    background:  #E8C397; /* Цвет фона под ссылкой */
+    color: #000000; /* Цвет ссылки */
+}
+
+.changingBtn{
+    background:rgba(0, 0, 0, 0);
+    border: 1px solid #E8C397;
+    box-sizing: border-box;
+    cursor:pointer;
+    color: #E8C397;
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+.changingBtn:hover{
+    background:  #E8C397; /* Цвет фона под ссылкой */
+    color: #000000; /* Цвет ссылки */
+}

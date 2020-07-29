@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+    <title>Availiable Courses</title>
+</head>
+<body>
+<div class="container-xl">
+    <form name="newCourseForm" method="POST" onreset="functionListener()"> <!--по нажатию запускается функция sendJSON()-->
+        <br>
+        <h1>Доступные курсы</h1>
+        <br>
+        <p><button id="addCourseBtn" class="newButtons" style="right:659px; top:27px;" onclick="emptyRows()">Добавить</button></p>
+        <p><button id="showAllCourses" class="newButtons" style="right:1200px; top:27px; display: none;" onclick="closeRows()">Скрыть поле ввода</button></p>
+        <table id="coursesInfo" class="table table-hover table-dark">
+            <thead>
+            <tr id="columnHeading">
+                <th scope="col">Название курса</th>
+                <th scope="col">Область знаний</th>
+                <th scope="col">Компания</th>
+                <th scope="col">Цена (в руб.)</th>
+                <th scope="col">Преподаватель</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tbody id = "newTable"> <!--здесь появится таблица с обновлёнными данными-->
+            </tbody>
+            <tbody id = "updateRows"> <!--здесь появятся поля для изменения данных-->
+            </tbody>
+            <tbody id = "emptyRows"> <!--здесь появятся поля для ввода данных-->
+            </tbody>
+        </table>
+    </form>
+</div>
+</body>
+</html>
